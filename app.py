@@ -7,7 +7,7 @@ import random
 app = Flask(__name__)
 
 BASE_URL = os.getenv("BASE_URL")
-API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("gsyiwhgra999")
 
 # MongoDB
 MONGO_URI = os.getenv("MONGO_URI")
