@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: urlshortener-backend
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    plan: free
+    branch: main
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: API_KEY
+        sync: false
+      - key: BASE_URL
+        sync: false
